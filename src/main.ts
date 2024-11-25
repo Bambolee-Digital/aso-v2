@@ -3,24 +3,22 @@
 import * as appStoreScraperDefault from 'app-store-scraper';
 // @ts-ignore
 import * as googlePlayScraperDefault from 'google-play-scraper';
-
 import {
   AppInfo,
   SearchOptions,
   ScoreResult,
   SuggestOptions,
   SearchResult,
-  StoreCollection,
   StoreType,
   StoreConfig,
   CollectionOptions
-} from './types';
-import { ScoreCalculator, KeywordAnalyzer } from './utils';
-import { ASOAnalyzer } from './analyzer';
-import * as R from 'ramda';
+} from './types.js';
+import { ScoreCalculator, KeywordAnalyzer } from './utils.js';
+import { ASOAnalyzer } from './analyzer.js';
+import debug from 'debug';
 import pThrottle from 'p-throttle';
 import pRetry from 'p-retry';
-import debug from 'debug';
+import * as R from 'ramda';
 
 const log = debug('aso');
 

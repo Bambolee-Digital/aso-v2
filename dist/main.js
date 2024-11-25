@@ -3,12 +3,12 @@
 import * as appStoreScraperDefault from 'app-store-scraper';
 // @ts-ignore
 import * as googlePlayScraperDefault from 'google-play-scraper';
-import { ScoreCalculator, KeywordAnalyzer } from './utils';
-import { ASOAnalyzer } from './analyzer';
-import * as R from 'ramda';
+import { ScoreCalculator, KeywordAnalyzer } from './utils.js';
+import { ASOAnalyzer } from './analyzer.js';
+import debug from 'debug';
 import pThrottle from 'p-throttle';
 import pRetry from 'p-retry';
-import debug from 'debug';
+import * as R from 'ramda';
 const log = debug('aso');
 // Normaliza as APIs para garantir que temos as funções necessárias
 const normalizeAPI = (api) => {
@@ -25,14 +25,8 @@ const normalizeAPI = (api) => {
 const appStore = normalizeAPI(appStoreScraperDefault);
 const google = normalizeAPI(googlePlayScraperDefault);
 export class ASO {
-    store;
-    api;
-    MAX_SEARCH;
-    MAX_LIST;
-    MAX_KEYWORD_LENGTH = 25;
-    throttle;
-    config;
     constructor(store, config = {}) {
+        this.MAX_KEYWORD_LENGTH = 25;
         this.store = store;
         this.api = store === 'gplay' ? google : appStore;
         this.MAX_SEARCH = store === 'gplay' ? 250 : 200;
@@ -261,4 +255,3 @@ export class ASO {
         return this.store === 'itunes';
     }
 }
-//# sourceMappingURL=main.js.map

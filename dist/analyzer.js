@@ -1,7 +1,6 @@
-// analyzer.ts
-import { ScoreCalculator, KeywordAnalyzer } from './utils';
+import { ScoreCalculator, KeywordAnalyzer } from './utils.js';
+import { ASO } from './main.js';
 import * as R from 'ramda';
-import { ASO } from './main';
 import debug from 'debug';
 const log = debug('aso:analyzer');
 export class ASOAnalyzer {
@@ -289,4 +288,3 @@ export class ASOAnalyzer {
         return ScoreCalculator.aggregate([6, 4], [lengthScore, wordScore]);
     }
 }
-//# sourceMappingURL=analyzer.js.map

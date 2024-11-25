@@ -1,6 +1,5 @@
 import * as R from 'ramda';
 import keywordExtractor from 'keyword-extractor';
-import { AppInfo } from './types';
 import { ExtractionOptions } from 'keyword-extractor/types/lib/keyword_extractor';
 
 export class ScoreCalculator {

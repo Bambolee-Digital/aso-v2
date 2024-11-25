@@ -1,5 +1,5 @@
-import { AppInfo, SearchResult, SuggestOptions, StoreType } from './types';
-import { ASO } from './main';
+import { AppInfo, SearchResult, SuggestOptions, StoreType } from './types.js';
+import { ASO } from './main.js';
 export declare class ASOAnalyzer {
     /**
      * Analyze title matches for keyword

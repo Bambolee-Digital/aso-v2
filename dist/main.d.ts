@@ -1,4 +1,4 @@
-import { AppInfo, SearchOptions, ScoreResult, SuggestOptions, SearchResult, StoreType, StoreConfig, CollectionOptions } from './types';
+import { AppInfo, SearchOptions, ScoreResult, SuggestOptions, SearchResult, StoreType, StoreConfig, CollectionOptions } from './types.js';
 export declare class ASO {
     private readonly store;
     private readonly api;

@@ -1,15 +1,11 @@
-// index.ts
-// Importações (note a extensão .js)
-import { ASOAnalyzer } from './analyzer.js';
+import { ASOAnalyzer } from './analyzer.js'; // Note a extensão .js
 import { ASO } from './main.js';
 import { ScoreCalculator } from './utils.js';
 // Exportações
-// Main class export
 export { ASO } from './main.js';
-// Analyzer utilities
 export { ASOAnalyzer } from './analyzer.js';
-// Score calculation utilities
 export { ScoreCalculator, KeywordAnalyzer } from './utils.js';
+export * from './types.js';
 // Constants
 export const VERSION = '2.0.0';
 export const DEFAULT_CONFIG = {
@@ -152,4 +148,3 @@ export const helpers = {
 };
 // Default export
 export default ASO;
-//# sourceMappingURL=index.js.map

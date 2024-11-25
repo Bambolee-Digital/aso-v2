@@ -1,22 +1,24 @@
-{
-  "name": "aso-v2",
-  "version": "2.0.10",
+{"name": "aso-v2",
+  "version": "2.0.14",
   "description": "Modern App Store Optimization (ASO) tools for iTunes and Google Play",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/src/index.js",
-      "types": "./dist/src/index.d.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
     "./analyzer": {
-      "import": "./dist/src/analyzer.js",
-      "types": "./dist/src/analyzer.d.ts"
+      "import": "./dist/analyzer.js",
+      "require": "./dist/analyzer.js",
+      "types": "./dist/analyzer.d.ts"
     },
     "./utils": {
-      "import": "./dist/src/utils.js",
-      "types": "./dist/src/utils.d.ts"
+      "import": "./dist/utils.js",
+      "require": "./dist/utils.js",
+      "types": "./dist/utils.d.ts"
     }
   },
   "scripts": {

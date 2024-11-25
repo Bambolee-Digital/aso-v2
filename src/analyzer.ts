@@ -1,15 +1,14 @@
 // analyzer.ts
-
 import {
   AppInfo,
   KeywordMetrics,
   SearchResult,
   SuggestOptions,
   StoreType
-} from './types';
-import { ScoreCalculator, KeywordAnalyzer } from './utils';
+} from './types.js';
+import { ScoreCalculator, KeywordAnalyzer } from './utils.js';
+import { ASO } from './main.js';
 import * as R from 'ramda';
-import { ASO } from './main';
 import debug from 'debug';
 
 const log = debug('aso:analyzer');

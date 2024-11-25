@@ -3,7 +3,7 @@ import { AppInfo, ScoreResult, StoreConfig } from './types.js';
 export { ASO } from './main.js';
 export { ASOAnalyzer } from './analyzer.js';
 export { ScoreCalculator, KeywordAnalyzer } from './utils.js';
-export type { StoreType, StoreCollection, SuggestionStrategy, AppInfo, SearchOptions, SearchResult, ScoreResult, SuggestOptions, CollectionOptions, KeywordMetrics, StoreResponse, StoreConfig } from './types.js';
+export * from './types.js';
 export declare const VERSION = "2.0.0";
 export declare const DEFAULT_CONFIG: StoreConfig;
 export declare const COLLECTIONS: {
