@@ -1,6 +1,6 @@
 {
   "name": "aso-v2",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Modern App Store Optimization (ASO) tools for iTunes and Google Play",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
