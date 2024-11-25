@@ -1,21 +1,19 @@
 // index.ts
+// Importações (note a extensão .js)
+import { ASOAnalyzer } from './analyzer.js';
+import { ASO } from './main.js';
+import { AppInfo, ScoreResult, StoreConfig } from './types.js';
+import { ScoreCalculator } from './utils.js';
 
-export * from './utils';
-export * from './analyzer.js';
-
-import { ASOAnalyzer } from './analyzer';
-import { ASO } from './main';
-import { AppInfo, ScoreResult, StoreConfig } from './types';
-import { ScoreCalculator } from './utils';
-
+// Exportações
 // Main class export
-export { ASO } from './main';
+export { ASO } from './main.js';
 
 // Analyzer utilities
-export { ASOAnalyzer } from './analyzer';
+export { ASOAnalyzer } from './analyzer.js';
 
 // Score calculation utilities
-export { ScoreCalculator, KeywordAnalyzer } from './utils';
+export { ScoreCalculator, KeywordAnalyzer } from './utils.js';
 
 // Type exports
 export type {
@@ -31,7 +29,7 @@ export type {
   KeywordMetrics,
   StoreResponse,
   StoreConfig
-} from './types';
+} from './types.js';
 
 // Constants
 export const VERSION = '2.0.0';

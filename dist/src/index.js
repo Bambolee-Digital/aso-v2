@@ -1,4 +1,5 @@
 // index.ts
+export * from './analyzer.js';
 import { ASOAnalyzer } from './analyzer';
 import { ASO } from './main';
 import { ScoreCalculator } from './utils';

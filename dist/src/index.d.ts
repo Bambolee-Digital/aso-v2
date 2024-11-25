@@ -1,3 +1,4 @@
+export * from './analyzer.js';
 import { ASO } from './main';
 import { AppInfo, ScoreResult, StoreConfig } from './types';
 export { ASO } from './main';
