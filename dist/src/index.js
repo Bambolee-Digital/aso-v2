@@ -1,14 +1,15 @@
 // index.ts
-export * from './analyzer.js';
-import { ASOAnalyzer } from './analyzer';
-import { ASO } from './main';
-import { ScoreCalculator } from './utils';
+// Importações (note a extensão .js)
+import { ASOAnalyzer } from './analyzer.js';
+import { ASO } from './main.js';
+import { ScoreCalculator } from './utils.js';
+// Exportações
 // Main class export
-export { ASO } from './main';
+export { ASO } from './main.js';
 // Analyzer utilities
-export { ASOAnalyzer } from './analyzer';
+export { ASOAnalyzer } from './analyzer.js';
 // Score calculation utilities
-export { ScoreCalculator, KeywordAnalyzer } from './utils';
+export { ScoreCalculator, KeywordAnalyzer } from './utils.js';
 // Constants
 export const VERSION = '2.0.0';
 export const DEFAULT_CONFIG = {
